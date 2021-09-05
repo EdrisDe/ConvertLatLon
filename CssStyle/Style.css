@@ -1,0 +1,8 @@
+@font-face {
+    src: url("../PersianFont/ir_sans.ttf");
+    font-family: PerFont;
+}
+*{
+    direction: rtl;
+    padding: 0px; margin: 0px;
+}

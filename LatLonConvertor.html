@@ -4,21 +4,24 @@
     <meta name="ConvertLatLon"
           content="js,Convert,degree,latitude, longitude, Convertor,decimal degree">
         <title>LatLonConvertor</title>
+        <link href="CssStyle/Style.css" type="text/css" rel="stylesheet">
 </head>
 <body>
-<h4>Degrees Minutes Seconds to/from Decimal Degrees</h4>
-<p>This tool permits the user to convert latitude and longitude between decimal degrees and degrees, minutes, and seconds.  For convenience, a link is included to the National Geodetic Survey's NADCON program, which allows conversions between the NAD83 / WGS84 coordinate system and the older NAD27 coordinate system.  NAD27 coordinates are presently used for broadcast authorizations and applications.</p>
-<p>This tool requires that Javascript be enabled to perform the calculations.</p>
-<b>Degrees Minutes Seconds to Decimal Degrees</b>
-<fieldset style="background-color: darksalmon" id="Field">
-    Enter Degrees Minutes Seconds latitude:  <input type="text" name="LAh" value=""> <input type="text" name="LAm" value=""> <input type="text" name="LAs" value="">
-    <hr>
-    Enter Degrees Minutes Seconds longitude: <input type="text" name="LOh" value=""> <input type="text" name="LOm" value=""> <input type="text" name="LOs" value="">
-    <hr>
-    <input type="button" onclick="ShowRes()" value="Convert to Decimal"> <input type="button" onclick="ClearVal()" value="Clear Value">
-    <hr>
-    Results:  Latitude:<input type="text" name="ResLa" value=""> Longitude:<input type="text" name="ResLo" value="">
-</fieldset>
+<div id="Maintext" class="MainText">
+    <h4 id="TitleText1" class="TextHeader">تبدیل مختصات جغرافیایی</h4>
+    <p>این سایت اولین تلاش ما هست برای برنامه نویسی تلاش کردیم بستری فراهم آوریم که در آن شما بتوانید به صورت کاملا بومی به ابزارهایی دسترسی داشته باشید که بتوانید در تحقیقات علمی خود به راحتی از آنها بهره بگیرید. یکی از این ابزارها که به شدت به کاربران دریایی به آن ها نیاز دارند، ابزار تبدیل مختصات جغرافیایی هست که استفاده های علمی و عملیاتی فراوانی دارد. در جعبه ابزار فراهم شده شما می توانید با ارائه مختصات خود، تبدیل های لازم را روی آن آنجام دهید.</p>
+    <b>تبدیل درجه دقیقه ثانیه به مختصات جغرافیایی</b>
+    <fieldset  id="Field" class="Box">
+        مختصات طول جغرافیایی خود را وارد کنید:  <input id="FirsInput" type="text" name="LAh" value=""> <input type="text" name="LAm" value=""> <input type="text" name="LAs" value="">
+        <hr>
+        مختصات عرض جغرافیایی خود را وارد کنید:  <input type="text" name="LOh" value=""> <input type="text" name="LOm" value=""> <input type="text" name="LOs" value="">
+        <hr>
+        <input type="button" onclick="ShowRes()" value="تبدیل مختصات"> <input type="button" onclick="ClearVal()" value="پاک کردن داده ها">
+        <hr>
+        نتیجه:  عرض جغرافیایی:<input type="text" name="ResLa" value=""> طول جغرافیایی:<input type="text" name="ResLo" value="">
+    </fieldset>
+</div>
+
 <script type="text/javascript">
     function ShowRes(){
         var x=document.getElementsByName('LAh');

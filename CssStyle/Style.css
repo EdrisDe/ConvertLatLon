@@ -1,8 +1,28 @@
 @font-face {
     src: url("../PersianFont/ir_sans.ttf");
     font-family: PerFont;
+
 }
 *{
     direction: rtl;
     padding: 0px; margin: 0px;
+    font-family: PerFont;
+    text-align: justify;
+}
+
+#Maintext{
+    position: absolute;
+    Left:20%;
+    width: 60%;
+
+}
+#Field{
+    background-color: darksalmon;
+    text-align: right;
+}
+#Field>input{
+    width: 15%;
+}
+#FirsInput{
+    margin-right:0.8%
 }

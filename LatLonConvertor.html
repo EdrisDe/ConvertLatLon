@@ -1,0 +1,50 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="ConvertLatLon"
+          content="js,Convert,degree,latitude, longitude, Convertor,decimal degree,Html">
+        <title>LatLonConvertor</title>
+</head>
+<body>
+<h4>Degrees Minutes Seconds to/from Decimal Degrees</h4>
+<p>This tool permits the user to convert latitude and longitude between decimal degrees and degrees, minutes, and seconds.  For convenience, a link is included to the National Geodetic Survey's NADCON program, which allows conversions between the NAD83 / WGS84 coordinate system and the older NAD27 coordinate system.  NAD27 coordinates are presently used for broadcast authorizations and applications.</p>
+<p>This tool requires that Javascript be enabled to perform the calculations.</p>
+<b>Degrees Minutes Seconds to Decimal Degrees</b>
+<fieldset style="background-color: darksalmon" id="Field">
+    Enter Degrees Minutes Seconds latitude:  <input type="text" name="LAh" value=""> <input type="text" name="LAm" value=""> <input type="text" name="LAs" value="">
+    <hr>
+    Enter Degrees Minutes Seconds longitude: <input type="text" name="LOh" value=""> <input type="text" name="LOm" value=""> <input type="text" name="LOs" value="">
+    <hr>
+    <input type="button" onclick="ShowRes()" value="Convert to Decimal"> <input type="button" onclick="ClearVal()" value="Clear Value">
+    <hr>
+    Results:  Latitude:<input type="text" name="ResLa" value=""> Longitude:<input type="text" name="ResLo" value="">
+</fieldset>
+<script type="text/javascript">
+    function ShowRes(){
+        var x=document.getElementsByName('LAh');
+        var y=document.getElementsByName("LAm");
+        var z=document.getElementsByName("LAs");
+        resLat=document.getElementsByName("ResLa");
+        resLat[0].value=Number(x[0].value)+Number(y[0].value)/60+Number(z[0].value)/3600;
+        var x=document.getElementsByName('LOh');
+        var y=document.getElementsByName("LOm");
+        var z=document.getElementsByName("LOs");
+        resLon=document.getElementsByName("ResLo");
+        resLon[0].value=Number(x[0].value)+Number(y[0].value)/60+Number(z[0].value)/3600;
+    }
+    function  ClearVal(){
+        var x=document.getElementsByName('LAh');
+        var y=document.getElementsByName("LAm");
+        var z=document.getElementsByName("LAs");
+        resLat=document.getElementsByName("ResLa");
+        x[0].value="";y[0].value="";z[0].value="";resLat[0].value="";
+        var x=document.getElementsByName('LOh');
+        var y=document.getElementsByName("LOm");
+        var z=document.getElementsByName("LOs");
+        resLon=document.getElementsByName("ResLo");
+        x[0].value="";y[0].value="";z[0].value="";resLon[0].value="";
+    }
+</script>
+<body>This is the new git branch</body>
+</body>
+</html>

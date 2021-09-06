@@ -7,19 +7,33 @@
         <link href="CssStyle/Style.css" type="text/css" rel="stylesheet">
 </head>
 <body>
+<img src="Image/Header2.jpg" id="Header1Image" class="Media">
 <div id="Maintext" class="MainText">
     <h4 id="TitleText1" class="TextHeader">تبدیل مختصات جغرافیایی</h4>
     <p>این سایت اولین تلاش ما هست برای برنامه نویسی تلاش کردیم بستری فراهم آوریم که در آن شما بتوانید به صورت کاملا بومی به ابزارهایی دسترسی داشته باشید که بتوانید در تحقیقات علمی خود به راحتی از آنها بهره بگیرید. یکی از این ابزارها که به شدت به کاربران دریایی به آن ها نیاز دارند، ابزار تبدیل مختصات جغرافیایی هست که استفاده های علمی و عملیاتی فراوانی دارد. در جعبه ابزار فراهم شده شما می توانید با ارائه مختصات خود، تبدیل های لازم را روی آن آنجام دهید.</p>
-    <b>تبدیل درجه دقیقه ثانیه به مختصات جغرافیایی</b>
+    <h4 id="TitelBox" class="TextHeader">تبدیل درجه دقیقه ثانیه به مختصات جغرافیایی</h4>
     <fieldset  id="Field" class="Box">
-        مختصات طول جغرافیایی خود را وارد کنید:  <input id="FirsInput" type="text" name="LAh" value=""> <input type="text" name="LAm" value=""> <input type="text" name="LAs" value="">
+        مختصات طول جغرافیایی خود را وارد کنید:  <br><input id="FirsInput" class="InputBox" type="text" name="LAh" value=""> <input  class="InputBox" type="text" name="LAm" value=""> <input  class="InputBox" type="text" name="LAs" value="">
         <hr>
-        مختصات عرض جغرافیایی خود را وارد کنید:  <input type="text" name="LOh" value=""> <input type="text" name="LOm" value=""> <input type="text" name="LOs" value="">
+        مختصات عرض جغرافیایی خود را وارد کنید:  <br><input class="InputBox" type="text" name="LOh" value=""> <input  class="InputBox" type="text" name="LOm" value=""> <input  class="InputBox" type="text" name="LOs" value="">
         <hr>
-        <input type="button" onclick="ShowRes()" value="تبدیل مختصات"> <input type="button" onclick="ClearVal()" value="پاک کردن داده ها">
+        <input id="InputButton" class="InputButton" type="button" onclick="ShowRes()" value="تبدیل مختصات"> <input id="InputButton" class="InputButton" type="button" onclick="ClearVal()" value="پاک کردن داده ها">
         <hr>
-        نتیجه:  عرض جغرافیایی:<input type="text" name="ResLa" value=""> طول جغرافیایی:<input type="text" name="ResLo" value="">
+        <p id="ResultRow" class="ResultRow"> طول جغرافیایی:<input id="FirstResbox" type="text" name="ResLa" value=""><br> عرض جغرافیایی:<input  type="text" name="ResLo" value=""></p>
     </fieldset>
+</div>
+<div id="MenuList2" class="MenuList">
+    <ul id="ListMenu2" class="ListMenu2">
+        <li><a href="https://fa.wikipedia.org/wiki/%D8%B5%D9%81%D8%AD%D9%87%D9%94_%D8%A7%D8%B5%D9%84%DB%8C">آموزش WW3</a></li>
+        <li><a href="https://fa.wikipedia.org/wiki/%D8%B5%D9%81%D8%AD%D9%87%D9%94_%D8%A7%D8%B5%D9%84%DB%8C">آموزش آموزش مایک 21</a></li>
+        <li><a href="https://fa.wikipedia.org/wiki/%D8%B5%D9%81%D8%AD%D9%87%D9%94_%D8%A7%D8%B5%D9%84%DB%8C">آموزش آموزش متلب</a></li>
+        <li><a href="https://fa.wikipedia.org/wiki/%D8%B5%D9%81%D8%AD%D9%87%D9%94_%D8%A7%D8%B5%D9%84%DB%8C">آموزش آموزش Fvcom</a></li>
+        <li><a href="https://fa.wikipedia.org/wiki/%D8%B5%D9%81%D8%AD%D9%87%D9%94_%D8%A7%D8%B5%D9%84%DB%8C">آموزش آموزش پایتون</a></li>
+        <li><a href="https://fa.wikipedia.org/wiki/%D8%B5%D9%81%D8%AD%D9%87%D9%94_%D8%A7%D8%B5%D9%84%DB%8C">آموزش آموزش جاوا</a></li>
+        <li><a href="https://fa.wikipedia.org/wiki/%D8%B5%D9%81%D8%AD%D9%87%D9%94_%D8%A7%D8%B5%D9%84%DB%8C">آموزش آموزش سرور</a></li>
+        <li><a href="https://fa.wikipedia.org/wiki/%D8%B5%D9%81%D8%AD%D9%87%D9%94_%D8%A7%D8%B5%D9%84%DB%8C">آموزش دلف تری </a></li>
+        <li><a href="https://fa.wikipedia.org/wiki/%D8%B5%D9%81%D8%AD%D9%87%D9%94_%D8%A7%D8%B5%D9%84%DB%8C">آموزش آموزش برنامه نویسی</a></li>
+    </ul>
 </div>
 
 <script type="text/javascript">
